@@ -1,7 +1,16 @@
-<!-- one time setup: -->
+<!-- one time setup for a project -->
 
-> git init
-> git remote add origin https://github.com/ranjitsujwol/MERN
-> to check if 2 is working or not > git remote -v
+1. > git init
+2. > git remote add origin <github url>
+   > eg: > git remote add origin https://github.com/sagartmg2/baisakh-2081
 
-<!-- for everyday pull push: -->
+   2.1 (optional) to check .2 > git remote -v
+
+<!-- for everyday pull push in git -->
+
+1.  > git status (optional)
+2.  > git add . // git add all
+    > 2.1 git add <file_name>
+        eg: git add card.html
+3.  > git commit -m "html-css"
+4.  > git push
