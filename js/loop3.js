@@ -1255,37 +1255,3 @@ for (i = 0; i < nepaliNames.length; i++) {
 }
 
 console.log(users);
-
-
-
-// countryCode("Yemen")
-
-/* 6 falsy values in javascript
-    - false
-    - 0
-    - undefined
-    - null
-    - ""
-    - NaN
-
-
-
-*/
-
-
-
-/* 
-      find the cods of a specific country 
-  
-      TODO: 
-      create a function findCountryCode 
-      - if i pass arguement "Nepal" to the function it should return me np
-      - if i pass arguement "zimbabwe" to the function it should return me zw
-  
-  */
-
-/* 
-  
-      array functions
-      
-  */
