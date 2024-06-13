@@ -96,35 +96,80 @@ let filteredCartItems = cartItems.filter((element) => {
 console.log(filteredCartItems);
 
 let student1 = {
-    name: "ram",
-    gender: "male",
-    paidStatus: false,
-    hasScholorship: true,
-    hasMetAttandence: true,
-}
+  name: "ram",
+  gender: "male",
+  paidStatus: false,
+  hasScholorship: true,
+  hasMetAttandence: true,
+};
 
 let student2 = {
-    name: "sita",
-    gender: "female",
-    paidStatus: false,
-    hasScholorship: false,
-    hasMetAttandence: false,
-}
+  name: "sita",
+  gender: "female",
+  paidStatus: false,
+  hasScholorship: false,
+  hasMetAttandence: false,
+};
 
 let student3 = {
-    name: "gita",
-    gender: "others",
-    paidStatus: true,
-    hasScholorship: true,
-    hasMetAttandence: false,
-}
+  name: "gita",
+  gender: "others",
+  paidStatus: true,
+  hasScholorship: true,
+  hasMetAttandence: false,
+};
 
-let students = [student1, student2, student3]
-let eligibleStudents = []
-let nonEligibleStudents = []
+let students = [student1, student2, student3];
+let eligibleStudents = [];
+let nonEligibleStudents = [];
 
+eligibleStudents = students.filter((element) => {
+  if (
+    (element.hasScholorship || element.paidStatus) &&
+    element.hasMetAttandence
+  ) {
+    return true;
+  }
+});
+console.log(eligibleStudents);
 
 /* eligible students */
 /* non eligible students */
 
+// map funtion and reducing code as much as possible
 
+let numbers = [1, 2, 3, 4, 5];
+
+console.log("original array is " + numbers);
+
+let doubleNumbers = numbers.map((element) => element * 2);
+console.log("double of the above array is " + doubleNumbers);
+
+let tripleNumbers = numbers.map((element) => element * 3);
+console.log("triple of the above array is " + tripleNumbers);
+
+let names = ["ram", "hari", "shyam", "gita"]
+
+// let newUsers = []
+
+// names.forEach((name, index) => {
+//     newUsers.push({
+//         name: name,
+//         email: `${name}@gmail.com`,
+//         password: `${name}${index}`,
+//     })
+// })
+
+// console.log(newUsers)
+
+// using map
+
+let fakeUsers = names.map((name, index) => {
+    return {
+        name,
+        email: `${name}@gmail.com`,
+        password: `${name}${index}`,
+    }
+})
+
+console.log(fakeUsers)
